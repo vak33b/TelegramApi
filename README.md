@@ -16,15 +16,14 @@ project_root/
 ~~~
 │
 ├── app/
-│   ├── config.py # Конфигурация (API_ID, HASH, session name и др.)
+│   ├── config.py 		# Конфигурация (API_ID, HASH, session name и др.)
+│   ├── routes.py 		# Эндпоинты
 │   ├── search_utils.py         # Вспомогательные функции (фильтрация по расширениям)
-│   ├── search.py               # Основная логика поиска и скачивания
-│   └── auth.py                 # Авторизация клиента Pyrogram
+│   ├── server.py               # FastAPI приложение
+│   └── telegram_worker.py      # Основная логика поиска и скачивания
 │
 ├── downloads/                  # Папка для скачанных файлов (создаётся автоматически)
-├── server.py                   # FastAPI приложение
-├── test_manual_download.py     # Пример ручного вызова
-└── requirements.txt
+└── requirements.txt		# Документ с всеми библиотеками
 ~~~
 
 ## ⚙️ Установка:
